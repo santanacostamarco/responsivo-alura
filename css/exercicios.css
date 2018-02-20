@@ -49,3 +49,49 @@ header{
         width: 33.3%;
     }
 }
+
+.exibe-menu, .esconde-menu{
+    float: left;
+}
+@media (min-width: 820px){
+    .exibe-menu, .esconde-menu{
+        display: none;
+    }
+}
+@media (max-width: 820px){
+    .barra-nav{
+        position: fixed;
+        top: 0;
+        left: -90%;
+        width: 90%;
+        max-width: 320px;
+        height: 100%;
+        background-color: #f0f0f0;
+        margin: 0;
+        z-index: 555;
+        transition: left .3s ease-out;
+    }
+    .menu-mobile{
+        left: 0;
+    }
+    .barra-nav.menu-mobile::before{
+        position: fixed;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(168, 168, 168, 0.315);
+    }
+    .menu-principal li{
+        display: block;
+        float: none;
+        margin: 1em;
+    }
+    .esconde-menu{
+        float: right;
+        margin: 1em;
+    }
+    .busca{
+        margin: 1em;
+    }
+}
