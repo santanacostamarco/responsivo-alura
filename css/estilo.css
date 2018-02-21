@@ -20,6 +20,7 @@ header {
 }
 .logo img {
 	display: block;
+	width: 200px;
 }
 
 /* busca */
@@ -39,6 +40,8 @@ header {
 
 		float: left;
 		-webkit-appearance: none;
+
+		width: calc(100% - 60px);
 	}
 	.busca button {
 		background: #f0f0f0;
@@ -57,6 +60,8 @@ header {
 		text-transform: lowercase;
 
 		float: left;
+
+		width: 60px;
 	}
 		.busca button:hover {
 			color: #0669de;
